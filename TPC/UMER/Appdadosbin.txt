@@ -1,0 +1,12 @@
+------- UMeR --------
+E-mail: mot1
+Nome: mot1
+Password: mot1
+Morada: mot1
+Data de nascimento: 15-12-1990
+Grau de cumprimento de horário: 100
+Classificação do motorista: 100
+Número de Kms realizados na UMeR até ao momento: 0,00
+O motorista encontra-se em horário de trabalho: false
+
+

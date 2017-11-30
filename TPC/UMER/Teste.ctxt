@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Teste
+comment1.params=
+comment1.target=Teste()
+comment2.params=
+comment2.target=void\ setUp()
+comment3.params=
+comment3.target=void\ testarMotorista()
+comment4.params=
+comment4.target=void\ testarCarro()
+comment5.params=
+comment5.target=void\ testarCoordenada()
+numComments=6
