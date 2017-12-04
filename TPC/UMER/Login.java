@@ -166,7 +166,7 @@ public class Login{
         return email;
     }    
     
-    private void loginMotorista( Utilizadores utilizadores,HashMap<String,Veiculo> veiculos,String email){
+    public void loginMotorista( Utilizadores utilizadores,HashMap<String,Veiculo> veiculos,String email){
         Motorista m = (Motorista) utilizadores.getUtilizadores().get(email);
         Scanner scin = new Scanner(System.in);
         int i;
@@ -225,7 +225,7 @@ public class Login{
         scin.close();
     }
     
-    private void associarViatura(Motorista m,HashMap<String,Veiculo> veiculos){
+    public void associarViatura(Motorista m,HashMap<String,Veiculo> veiculos){
         int i=0;
         if(m.getVeiculo()!=null){
             m.getVeiculo().setOcupado(false);

@@ -102,6 +102,8 @@ public class Motorista extends Ator implements Serializable
         return this.classificacao;
     }
     
+    
+    
     /**
      * Devolve o número de classificação a que o motorista foi sujeito até ao momento.
      * @return

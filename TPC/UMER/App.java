@@ -31,7 +31,7 @@ public class App implements Serializable{
      * 
      * Cria os menus e a camada de negócio.
      */    
-    private App() {
+     App() {
 
         String[] opcoes = {"Login",
                          "Registar",

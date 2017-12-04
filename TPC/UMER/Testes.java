@@ -1,26 +1,45 @@
-import java.lang.reflect.*;
+
+
 import static org.junit.Assert.*;
-import org.junit.Test;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import java.util.Set;
 import java.util.GregorianCalendar;
 import java.util.TreeSet;
-import java.util.List;
-import java.io.Serializable;
-import java.util.Iterator;
-import java.util.stream.Collectors;
 
-
-public class Teste{
-
-    public Teste(){
+/**
+ * A classe de teste Testes.
+ *
+ * @author  (seu nome)
+ * @version (um número de versão ou data)
+ */
+public class Testes
+{
+    /**
+     * Construtor default para a classe de teste Testes
+     */
+    public Testes()
+    {
+        
     }
 
-    public void setUp(){
+    public void mainTest(){
+        testarMotorista();
+        testarCarro();
+        testarCoordenada();
     }
-
+    
+    /**
+     * Define a .
+     *
+     * Chamado antes de cada método de caso de teste.
+     */
+    @Before
+    public void setUp()
+    {
+    }
+    
     public void testarMotorista(){
 
         Set<Viagem> hv = new TreeSet<>();
@@ -85,7 +104,7 @@ public class Teste{
         double tfdtas = mot1.totalFaturado(data_inicio,data_fim);
         assertEquals(25,tfdtas,0);
     }
-
+    
     public void testarCarro() {
 
         Coordenada c1 = new Coordenada(1,1);
@@ -106,7 +125,12 @@ public class Teste{
         assertEquals(6,y); 
     }
     
-    
+    /**
+     * Tears down the test fixture.
+     *
+     * Chamado após cada método de teste de caso.
+     */
+    @After
     public void tearDown()
     {
     }
