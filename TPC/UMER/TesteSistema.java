@@ -28,6 +28,9 @@ public class TesteSistema
     private Veiculo v;
     private Registo reg;
     private Ator a;
+    private Cliente cli;
+    private Coordenada cord;
+    private Coordenada cfim;
     
     public void mainTest(){
         
@@ -38,7 +41,6 @@ public class TesteSistema
         } catch (Exception e) {
             fail();
         }
-    
         
         try {
             mot = new Motorista("emailmot","mot","pass","braga","22-01-1980",viagem,5,4,4,120.3,true,v);
@@ -47,8 +49,19 @@ public class TesteSistema
             fail();
         }
         
+        try {
+            cli = new Cliente("emailcli","cli","clipass","bragança","22-01-1980",viagem,120.2);
+            util.adiciona(cli);
+        } catch (Exception e) {
+            fail();
+        }
+        
         String email = "emailmot";
         String pass = "mot";
+        cord = new Coordenada(1,1);
+        cfim = new Coordenada(5,6);
+        carro = new Carro(90,17.2,8,"22-XC-10",cord,false);
+        veic.put(carro.getMatricula(),carro);
         
         try {
             log.loginMotorista(util,veic,email);
@@ -56,19 +69,23 @@ public class TesteSistema
             fail();
         }
         
-        //dar logout do motorista
-        // adicionar cliente
-        // dar login cliente
-        // cliente chamar uma viatura
-        
-        
-        /*
         try {
-           adicionar cliente(mot,veic);
-        } catch (Exception e) {
+            log.associarViatura(mot,veic);
+        } catch(Exception e) {
             fail();
         }
-        */
+        
+        try {
+            log.realizarViagem(cli,mot,12.9,cord,cfim);
+        } catch(Exception e) {
+            fail();
+        }
+        
+        try {
+            log.verMontanteFaturado(mot);
+        } catch(Exception e) {
+            fail();
+        }
         
     }
 }
