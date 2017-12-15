@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Registo
+comment1.params=utilizadores\ veiculos
+comment1.target=void\ executa(Utilizadores,\ java.util.HashMap)
+comment2.params=utilizadores
+comment2.target=void\ registarCliente(Utilizadores)
+comment3.params=utilizadores
+comment3.target=void\ registarMotorista(Utilizadores)
+comment4.params=veiculos
+comment4.target=void\ registarVeiculo(java.util.HashMap)
+numComments=5

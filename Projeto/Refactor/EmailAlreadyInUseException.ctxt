@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=EmailAlreadyInUseException
+comment1.params=
+comment1.target=EmailAlreadyInUseException()
+comment1.text=Construtor\ vazio.
+comment2.params=msg
+comment2.target=EmailAlreadyInUseException(java.lang.String)
+comment2.text=\n\ Construtor\ parametrizado.\n\ @param\ msg\n
+numComments=3

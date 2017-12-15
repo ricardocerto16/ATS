@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Mota
+comment1.params=
+comment1.target=Mota()
+comment1.text=Construtor\ vazio.\ Cria\ uma\ inst\u00E2ncia\ de\ Mota.
+comment2.params=velocidademedia\ precobase\ fiabilidade\ matricula\ coordenadas\ ocupado
+comment2.target=Mota(int,\ double,\ int,\ java.lang.String,\ Coordenada,\ boolean)
+comment2.text=\n\ Construtor\ por\ par\u00E2metro.\n\ @param\ velocidademedia\n\ @param\ precobase\n\ @param\ fiabilidade\n\ @param\ matricula\n\ @param\ coordenadas\n\ @param\ ocupado\n
+comment3.params=c
+comment3.target=Mota(Mota)
+comment3.text=\n\ Construtor\ por\ c\u00F3pia.\n\ @param\ c\n
+comment4.params=
+comment4.target=Mota\ clone()
+comment4.text=\n\ Implementa\u00E7\u00E3o\ de\ clone.\n\ @return\n
+comment5.params=o
+comment5.target=boolean\ equals(java.lang.Object)
+comment5.text=\n\ Compara\ a\ igualdade\ com\ outro\ objecto.\n\ @param\ o\n\ @return\ \n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
