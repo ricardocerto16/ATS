@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=TesteSistema
+comment0.text=\n\ A\ classe\ de\ teste\ TesteSistema.\n\n\ @author\ \ (seu\ nome)\n\ @version\ (um\ n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\n
+comment1.params=
+comment1.target=TesteSistema()
+comment2.params=
+comment2.target=void\ setUp()
+comment3.params=
+comment3.target=void\ mainTest()
+comment4.params=
+comment4.target=void\ tearDown()
+comment5.params=
+comment5.target=void\ t1()
+numComments=6

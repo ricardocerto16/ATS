@@ -17,7 +17,11 @@ import java.util.HashMap;
  */
 public class TesteSistema
 {
+    public TesteSistema(){
     
+    }
+    
+   
     private App app;
     private Motorista mot;
     private Carro carro;
@@ -32,7 +36,14 @@ public class TesteSistema
     private Coordenada cord;
     private Coordenada cfim;
     
+    @Before
+    public void setUp()
+    {
+    }
+    
+    
     public void mainTest(){
+        
         
         //app = new App();
         log = new Login(); //log.executa(util,veic); 
@@ -95,5 +106,15 @@ public class TesteSistema
         
         
         
+    }
+    
+    @After
+    public void tearDown()
+    {
+    }
+
+    @Test
+    public void t1()
+    {
     }
 }

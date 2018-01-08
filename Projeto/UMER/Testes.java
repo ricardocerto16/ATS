@@ -76,7 +76,7 @@ public class Testes
                 System.out.println("Por favor, introduza uma classificação válida.");
         
         }
-        //assertEquals(5,mot1.getClassificacao());
+        assertEquals(5,mot1.getClassificacao());
         //assertEquals(-1,mot1.getClassificacao(),1);
         
         //Teste ao Tempo de Viagem
@@ -91,7 +91,7 @@ public class Testes
         
         //Teste ao atualizar Dados
         mot1.atualizaDados(cord,25,25,10);
-        //assertEquals(25,mot1.getKmsTotais(),1);
+        assertEquals(25,mot1.getKmsTotais(),1);
         
         //Teste ao total faturado
         double tf = mot1.totalFaturado();
