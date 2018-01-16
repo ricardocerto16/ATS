@@ -1,5 +1,4 @@
 import java.lang.reflect.Field;
-import refactor.Testes;
 
 public class EnergyCheckUtils {
 	public native static int scale(int freq);
@@ -74,14 +73,44 @@ public class EnergyCheckUtils {
 	}
 
 	public static void main(String args[]){
-		double[] before = getEnergyStats();
-		new Testes().mainTest();
-		double[] after = getEnergyStats();
-		System.out.println((after[0]-before[0])+ "joules of DRAM energy");
+		double[] media1 = new double[3];
+		double[] media2 = new double[3];
+		double[] before = new double[3];
+		double[] after = new double[3];
+		int i;
 
-	   	System.out.println((after[1]-before[1])+ "joules of CPU energy");
+		refactor.Testes test1 = new refactor.Testes();
+		normal.Testes test2 = new normal.Testes();	
+		
+		for(i=0;i<10;i++){
+			before = getEnergyStats();
+			test2.mainTest();
+			after = getEnergyStats();
+			media2[0] = media2[0] + (after[0] - before[0]);
+			media2[1] = media2[1] + (after[1] - before[1]);
+			media2[2] = media2[2] + (after[2] - before[2]);			
+		}
+		System.out.println("normal: " + (media2[0]/10)+ "joules of DRAM energy");
 
-	  	System.out.println((after[2]-before[2])+ "joules of Package energy");
+	   	System.out.println("normal: " + (media2[1]/10)+ "joules of CPU energy");
+
+	  	System.out.println("normal: " + (media2[2]/10)+ "joules of Package energy");
+		
+	  	/*
+		for(i=0;i<10;i++){
+			before = getEnergyStats();
+			test1.mainTest();
+			after = getEnergyStats();
+			media1[0] = media1[0] + (after[0] - before[0]);
+			media1[1] = media1[1] + (after[1] - before[1]);
+			media1[2] = media1[2] + (after[2] - before[2]);			
+		}
+		System.out.println("refactor: " + (media1[0]/10)+ "joules of DRAM energy");
+
+	   	System.out.println("refactor: " + (media1[1]/10)+ "joules of CPU energy");
+
+	  	System.out.println("refactor: " + (media1[2]/10)+ "joules of Package energy");
+	  	*/
 		ProfileDealloc();
 	}
 }
